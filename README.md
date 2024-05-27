@@ -1,2 +1,2 @@
-# indibuzz.github.io
-Indibuzz - Next Gen AI powerd community
+# Indibuzz
+ Indibuzz - Next Gen AI powerd community

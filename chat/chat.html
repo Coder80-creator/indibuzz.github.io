@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Section Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat Section Demo</h2>
+            </div>
+            <div class="chat-users">
+                <h3>Users</h3>
+                <ul id="user-list"></ul>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../ram.html" class="active">Home</a></li>
+                <li><a href="../explore.html/explore.html">Explore</a></li>
+                <li><a href="../upload/upload.html">Upload</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Chat</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-section">
+            <!-- Display user's profile information here -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
