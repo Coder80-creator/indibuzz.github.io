@@ -24,9 +24,52 @@
     justify-content: center;
 }
 .about{
+    text-align: center;
     color: gray;
     font-weight: bolder;
-    font-size: 82%;
+    font-size: 80%;
     width: 80%;
     margin-left: 10%;
+}
+.edit{
+    width: 80%;
+    height: 50px;
+    border-radius: 1px solid skyblue;
+    background-color: skyblue;
+    margin-left: 10%;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+.deatils{
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.deatils>div{
+    margin:auto;
+}
+.d1{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+.photos{
+    width: 90%;
+    padding: 5%;
+}
+.post_photo{
+    object-fit: cover;
+    width: 32%;
+    height: 150px;
+    border-radius: 5px;
 }
