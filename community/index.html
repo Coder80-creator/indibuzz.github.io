@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../explore/explore1.css">
+    <link rel="stylesheet" href="../index.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Community</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <img onclick="window.history.back();" src="../../src/back_arrow.png" width="30p-x" alt="">
+            <div class="site-title">Community</div>
+            
+            <div class="notification-profile">
+                <input class="search" type="search" name="search" placeholder="Search" id="">
+            </div>
+        </div>
+    </header>
+    <div class="parent_cat">
+        <div onclick="active(this)" class="cat active">Sports</div>
+        <div onclick="active(this)" class="cat">Technology</div>
+        <div onclick="active(this)" class="cat">Art</div>
+        <div onclick="active(this)" class="cat">Entertainment</div>
+        <div onclick="active(this)" class="cat">Gaming</div>
+        <div onclick="active(this)" class="cat">Politics</div>
+        <div onclick="active(this)" class="cat">Business</div>
+        <div onclick="active(this)" class="cat">Science</div>
+        <div onclick="active(this)" class="cat">Food</div>
+        <div onclick="active(this)" class="cat">Education</div>
+        <div onclick="active(this)" class="cat">Fashion</div>
+        <div onclick="active(this)" class="cat">Health</div>
+        <div onclick="active(this)" class="cat">Finance</div>
+        <div onclick="active(this)" class="cat">Travel</div>
+        <div onclick="active(this)" class="cat">Others</div>
+    </div>
+
+    <div class="tray">
+        <div class="posts">
+            <img class="post_img" src="../src/1.png" alt="">
+            <h5 class="username">Pikachu</h5>
+            <img class="share_img" src="../src/share.png" alt="">
+            <h3 class="heading_posts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto nemoa dolore nam</h3>
+            <img class="post" src="../sample/1.jpg" alt="">
+            <div class="vote_bottom">
+                <div class="contain_vote">
+                    <img class="vote" src="../src/up.png" alt="">
+                    <span>4.2k</span>
+                    <img class="vote" src="../src/down.png" alt="">
+                </div>
+                <div class="contain_vote contain_com">
+                    <img class="com" width="28px" height="28px" src="../src/comment.png" alt="">
+                    <span>2.2K</span>
+                </div>
+            <img class="reshare" src="../src/reshare.png" alt="">
+
+            </div>
+        </div>
+        <div class="posts">
+            <img class="post_img" src="../src/1.png" alt="">
+            <h5 class="username">Pikachu</h5>
+            <img class="share_img" src="../src/share.png" alt="">
+            <h3 class="heading_posts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto nemoa dolore nam</h3>
+            <img class="post" src="../sample/2.jpg" alt="">
+            <div class="vote_bottom">
+                <div class="contain_vote">
+                    <img class="vote" src="../src/up.png" alt="">
+                    <span>4.2k</span>
+                    <img class="vote" src="../src/down.png" alt="">
+                </div>
+                <div class="contain_vote contain_com">
+                    <img class="com" width="28px" height="28px" src="../src/comment.png" alt="">
+                    <span>2.2K</span>
+                </div>
+            <img class="reshare" src="../src/reshare.png" alt="">
+
+            </div>
+
+        </div><div class="posts">
+            <img class="post_img" src="../src/1.png" alt="">
+            <h5 class="username">Pikachu</h5>
+            <img class="share_img" src="../src/share.png" alt="">
+            <h3 class="heading_posts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto nemoa dolore nam</h3>
+            <img class="post" src="../sample/3.jpg" alt="">
+            <div class="vote_bottom">
+                <div class="contain_vote">
+                    <img class="vote" src="../src/up.png" alt="">
+                    <span>4.2k</span>
+                    <img class="vote" src="../src/down.png" alt="">
+                </div>
+                <div class="contain_vote contain_com">
+                    <img class="com" width="28px" height="28px" src="../src/comment.png" alt="">
+                    <span>2.2K</span>
+                </div>
+            <img class="reshare" src="../src/reshare.png" alt="">
+
+            </div>
+
+        </div><div class="posts">
+            <img class="post_img" src="../src/1.png" alt="">
+            <h5 class="username">Pikachu</h5>
+            <img class="share_img" src="../src/share.png" alt="">
+            <h3 class="heading_posts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto nemoa dolore nam</h3>
+            <img class="post" src="../sample/4.jpg" alt="">
+            <div class="vote_bottom">
+                <div class="contain_vote">
+                    <img class="vote" src="../src/up.png" alt="">
+                    <span>4.2k</span>
+                    <img class="vote" src="../src/down.png" alt="">
+                </div>
+                <div class="contain_vote contain_com">
+                    <img class="com" width="28px" height="28px" src="../src/comment.png" alt="">
+                    <span>2.2K</span>
+                </div>
+            <img class="reshare" src="../src/reshare.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+<script>
+    //document.getElementById("fkjnd").style.backgroundColor
+    function active(elm){
+        document.getElementsByClassName("active")[0].className="cat";
+        elm.className="cat active";
+    }
+</script>
+</body>
+</html>
+<footer>
+
+<nav>
+    <ul style="display: flex;align-items: center;justify-content: center;padding-bottom: 20px;">
+        <li><a href="../"><img width="27px" src="../../src/home.png" alt="" /></a></li>
+        <li><a href="../explore/explore1.html"><img width="27px" src="../../src/explore.png" alt="" /></a></li>
+        <li><a href="../upload/upload.html"><img width="27px" src="../../src/upload.png" alt="" /></a></li>
+        <li><a href="../community/"><img width="40px" src="../../src/community.png" alt="" /></a></li>
+        <li><a href="../chat/chat.html"><img width="27px" src="../../src/message.png" alt="" /></a></li>
+    </ul>
+</nav>
+</footer>

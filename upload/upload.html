@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img width="20px" src="../src/close.png" alt="">
-    <button class="next">Next</button>
-    <input class="title" type="text" id="title" placeholder="Title">
+    <img onclick="window.history.back();" width="20px" src="../src/close.png" style="margin-left: 10px;margin-top: 10px;" alt="">
+    <img src="../src/1.png" width="40px" style="position: absolute;margin-left: 7%;" alt="">
+    <select name="privacy" id="privacy">
+        <option value="Public">Public</option>
+
+            <option value="Private">Private</option>
+    </select>
+    <button id="next" onclick="next()" class="next">Next</button>
+    <input onchange="check()" class="title" type="text" id="title" placeholder="Title">
     <select name="Category" id="category">
         <option value="Sports">Sports</option>
         <option value="Technology">Technology</option>
@@ -28,7 +34,36 @@
         <option value="Others">Others</option>
     </select>
     <textarea type="text" id="body_text" placeholder="Body text (Optional)" ></textarea>
-    <input type="file" id="file">
+    <img id="temp" alt="Preview" style="display: none;">
 
+    <div class="file_input">
+    <img id="temp" alt="Preview" style="display: none;">
+        <img src="../src/img.png" width="40px" style="top:0px;" alt="" srcset="">
+        <input onchange="loadFile(event)" id="file" type="file" id="file">
+        <img src="../src/add.png" width="40px" style="top:0px;left: 10%;" alt="">
+        <input onchange="loadFile(event)" id="file1" type="file" id="file">
+
+    </div>
+<script>
+    function next(){
+        alert("Posted sucessfully !!");
+        window.history.back();
+
+    }
+    function check(){
+        var title=document.getElementById("title").value;
+        if(title.length!=0){
+            document.getElementById("next").style.backgroundColor="blue";
+        }
+    }
+      var loadFile = function(event) {
+    var output = document.getElementById('temp');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.style.display="flex";
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  }
+</script>
 </body>
 </html>

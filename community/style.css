@@ -1,0 +1,49 @@
+.site-header{
+    margin-top: 0px;
+}
+.site-title{
+    color: black;
+    font-weight: normal;
+    margin-left: -60px;
+}
+.search{
+    width: 120px;
+}
+.parent_cat{
+    margin-top: 80px;
+    position: absolute;
+    width: 95%;
+    padding-right: 5%;
+    height: 50px;
+    overflow-x: scroll;
+    display: flex;
+}
+
+
+.parent_cat::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .parent_cat {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.cat{
+    padding: 10px;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    transition-duration: 250ms;
+}
+.active{
+    background-color: skyblue;
+    color: white;
+}
+.tray{
+    position: relative;
+    top: 130px;
+    background-color: white;
+}
