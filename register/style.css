@@ -1,0 +1,33 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    margin: 10% 0px 0px 5%;
+    font-weight: bolder;
+}
+p{
+    margin-left: 5%;
+    font-size: 15px;
+    color: gray;
+}
+form{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+}
+form>input{
+    position: relative;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 8%;
+    background-color: rgb(240,245,255);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+}
+i{
+    position: absolute;
+    right: 17%;
+    margin-top: 5%;
+}
