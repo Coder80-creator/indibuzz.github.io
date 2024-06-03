@@ -64,6 +64,7 @@ signInWithPopup(auth, provider)
       setCookie("email",getAdditionalUserInfo(result).profile.email);
       setCookie("id",getAdditionalUserInfo(result).profile.id);
       setCookie("profile_image",getAdditionalUserInfo(result).profile.picture);
+      window.location.href="../home.html";
 
 
     // ...
