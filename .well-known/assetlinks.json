@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "co.median.android.obblop",
+      "sha256_cert_fingerprints": [
+        "88:F2:B9:A5:B8:67:BD:3C:70:34:CA:3D:0C:86:1C:E9:62:F8:E5:94:46:3E:32:70:EE:F4:5E:80:09:D7:E4:6E"
+      ]
+    }
+  }
+]
