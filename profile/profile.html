@@ -9,7 +9,7 @@
 <body>
     <img class="banner" src="../src/banner.jpg" width="100%" alt="">
     <div class="profile">
-        <img src="../src/1.png" width="90px" alt="">
+        <img id="profile" src="../src/1.png" width="90px" alt="">
     </div>
     <div class="name"><h3>Admin</h3></div>
     <div class="about">
@@ -30,6 +30,9 @@
         <img class="post_photo" src="../src/sample.jpg" alt="">        <img class="post_photo" src="../src/sample1.jpg" alt="">
         <img class="post_photo" src="../sample/3.jpg" alt="">    
     </div>
+    <script>
+        document.getElementById("profile").src=getCookie("profile_image");
+    </script>
 </body>
 </html>
 

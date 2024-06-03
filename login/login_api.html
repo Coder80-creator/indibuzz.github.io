@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+    import { getAuth, signInWithPopup,getAdditionalUserInfo, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBPlX9pn59w8rDexX1ZxlUaqWn2jQyQ22Y",
+      authDomain: "indibuzz-6259b.firebaseapp.com",
+      projectId: "indibuzz-6259b",
+      storageBucket: "indibuzz-6259b.appspot.com",
+      messagingSenderId: "312186859054",
+      appId: "1:312186859054:web:1ad4328bdd9381d1c9f9bf",
+      measurementId: "G-L0YNFTFTZL"
+    };
+  
+    // Initialize Firebase
+    const provider = new GoogleAuthProvider();
+    const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+      console.log(getAdditionalUserInfo(result));
+      setCookie("name",getAdditionalUserInfo(result).profile.given_name);
+      setCookie("user_name",getAdditionalUserInfo(result).profile.name);
+      setCookie("email",getAdditionalUserInfo(result).profile.email);
+      setCookie("id",getAdditionalUserInfo(result).profile.id);
+      setCookie("profile_image",getAdditionalUserInfo(result).profile.picture);
+
+
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+</script>
+
+
+</body>
+</html>
